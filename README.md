@@ -2,6 +2,8 @@
 
 ![Model Architecture](src/architecture.png?raw=true "Model Architecture")
 
+- pip install -r requirements.txt
+
 
 ## Publication
 

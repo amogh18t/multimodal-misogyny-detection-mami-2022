@@ -1,8 +1,8 @@
 import torch.optim as optim
 import time
 from sklearn import metrics
-from CLIP.clip import clip
-from CLIP.clip.simple_tokenizer import SimpleTokenizer as _Tokenizer
+import clip
+from clip.simple_tokenizer import SimpleTokenizer as _Tokenizer
 from helper_functions import *
 from text_normalizer import *
 import argparse
