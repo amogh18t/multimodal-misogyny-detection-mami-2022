@@ -1,3 +1,4 @@
+from torch.utils.data import Dataset
 import torch.optim as optim
 import time
 from sklearn import metrics
@@ -10,6 +11,8 @@ import numpy as np
 from torch import nn
 from torch.nn import functional as F
 import torch
+import random
+import pandas as pd
 
 parser = argparse.ArgumentParser(description='Train Multimodal Multi-task model for Misogyny Detection')
 parser.add_argument('--bs', type=int, default=64,
@@ -295,8 +298,8 @@ transform_config = {'train': transforms.Compose([
 }
 
 ## Dataset
-tr_df = pd.read_csv('data/train.csv', sep='\t')
-vl_df = pd.read_csv('data/validation.csv', sep='\t')
+tr_df = pd.read_csv('data/train.tsv', sep='\t')
+vl_df = pd.read_csv('data/validation.tsv', sep='\t')
 
 ## Find max length in training text
 # max_length = 0
