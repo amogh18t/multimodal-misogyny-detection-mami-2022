@@ -2,9 +2,6 @@
 
 ![Model Architecture](src/architecture.png?raw=true "Model Architecture")
 
-- pip install -r requirements.txt
-
-
 ## Publication
 
 [Paper](https://aclanthology.org/2022.semeval-1.105.pdf)
@@ -13,6 +10,9 @@
 
 [SemEval-2022 Task 5](https://competitions.codalab.org/competitions/34175): MAMI - Multimedia Automatic Misogyny Identification, co-located with NAACL 2022
 
+## To run the code
+
+- pip install -r requirements.txt
 
 ## Source code
 
